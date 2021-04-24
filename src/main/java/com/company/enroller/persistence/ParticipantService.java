@@ -2,6 +2,7 @@ package com.company.enroller.persistence;
 
 import java.util.Collection;
 
+import com.company.enroller.model.Meeting;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
