@@ -23,12 +23,11 @@ public class MeetingService {
         String hql = "FROM Meeting";
         Query query = session.createQuery(hql);
         return query.list();
-//        return session.createCriteria(Meeting.class).list();
     }
 
 
     public Meeting findById(long id) {
-        return (Meeting) session.get(Meeting.class, id);//podajemy typ i klucz
+        return (Meeting) session.get(Meeting.class, id);
     }
 
     public void add(Meeting meeting) {

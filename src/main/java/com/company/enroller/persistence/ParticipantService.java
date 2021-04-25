@@ -25,7 +25,7 @@ public class ParticipantService {
 
 
     public Participant findByLogin(String login) {
-        return (Participant) session.get(Participant.class, login);//podajemy typ i klucz
+        return (Participant) session.get(Participant.class, login);
     }
 
     public void add(Participant participant) {
